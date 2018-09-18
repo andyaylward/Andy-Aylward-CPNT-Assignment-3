@@ -1,0 +1,54 @@
+.hero-container {
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(0,0,0,0.9) -90%, transparent), url('./imgs/macbook.jpg');
+    background-size: cover;
+    background-position: 30% 50%;
+    width: 100%;
+}
+
+.container {
+    padding: 5px 5% 5px 5%;
+    background-color: salmon;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* #header-text {
+    font-size: 40px;
+    height: 100%;
+} */
+
+ul {
+    margin: 0px;
+    align-items: center;
+}
+
+.container li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.container li:hover{
+    text-decoration: none;
+}
+
+
+
+
+
+/* 
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 6vH;
+    }
+} */
+
+/* @media screen and (max-width: 700px) {
+    i span {
+        font-size: 32px;
+    }
+} */
+
