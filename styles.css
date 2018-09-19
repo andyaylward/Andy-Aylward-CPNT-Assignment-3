@@ -1,54 +1,189 @@
+/* Background image */
+
 .hero-container {
     min-height: 100vh;
-    background: linear-gradient(90deg, rgba(0,0,0,0.9) -90%, transparent), url('./imgs/macbook.jpg');
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) -90%, transparent), url('./imgs/macbook.jpg');
     background-size: cover;
     background-position: 30% 50%;
     width: 100%;
 }
 
+/* Navbar */
+
 .container {
-    padding: 20px;
-    background-color: #FFAFA3;
-    display: flex;
-    justify-content: flex-start; 
+    padding: 1% 10% 3% 10%;
+    background-image: linear-gradient(rgb(255, 155, 143), transparent);
+    display: flex; 
+    justify-content: space-between; 
     align-items: center;
 }
 
-#header-text {
-    font-size: 32px;
-    display: inline-block;
+.left-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: #111;
+}
+
+.left-nav-link {
+    text-decoration: none;    
+}
+
+.fa-chess-knight {
+    text-shadow: 1px 1px 3px rgba(34,34,34,.4);
+}
+
+#logo-text {
+    font-size: 38px;
+    display: inline-block; 
+    margin-left: 10px;
+    font-family: 'Nova Mono', monospace;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-shadow: 1px 1px 5px rgba(34,34,34,.4);
 }
 
 ul{
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
 
 .container li{
     list-style: none;
     display: inline;
     text-decoration: none;
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 .container li:hover{
     text-decoration: none;
 }
 
+.container li a{
+    text-decoration: none;
+    font-family: 'Nixie One', cursive;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    height: 100%;
+    line-height: 80px;
+    transition: .2s;
+}
 
+.container li a:hover{
+    font-size: 18px;
+    font-weight: 900;
+    transition: .2s;
+}
 
+.hamburger {
+    display: none;
+}
 
-
-/* 
-@media screen and (max-width: 800px) {
-    h1 {
-        font-size: 6vH;
+@media (max-width: 855px) {
+    header ul {
+        display: none;
     }
-} */
 
-/* @media screen and (max-width: 700px) {
-    i span {
-        font-size: 32px;
+    .hamburger {
+        display: block;
     }
-} */
+}
+
+/* Main Body */
+
+.card {
+    height: 275px;
+    width: 385px;
+    background-color: rgba(249,249,249, .7);
+    border-radius: 8px;
+    float: right;
+    margin-top: 25px;
+    margin-right: 10%;
+    box-shadow: 0px 0px 30px 0px rgba(36,62,54, .7); 
+}
+
+.card p {
+    margin: 20px 20px;
+    font-family: 'Nixie One', cursive;
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 17px;
+}
+
+.main-text {
+    float: left;
+    margin-left: 10%;
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(249,249,249);
+    background-color: #104435;
+    padding: 15px 0px;
+    font-family: 'Nixie One', cursive;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    margin: 20px 50px;
+    text-align: center;
+    transition: .3s;
+    border-radius: 8px;
+}
+
+.card a:hover {
+    background-color: #111;
+    transition: .3s;
+}
+
+
+
+
+@media (max-width: 855px) {
+    .card {
+        height: 175px;
+        margin-top: 40px;
+        margin-right: auto;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+    }
+
+    main {
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .card a {
+        margin-top: 30px;
+        transition: 0s;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        height: 190px;
+        width: 250px;
+        margin-right: auto
+    }
+
+    main {
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
 
