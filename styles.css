@@ -7,28 +7,28 @@
 }
 
 .container {
-    padding: 5px 5% 5px 5%;
-    background-color: salmon;
+    padding: 20px;
+    background-color: #FFAFA3;
     display: flex;
-    justify-content: space-between; 
+    justify-content: flex-start; 
     align-items: center;
 }
 
-/* #header-text {
-    font-size: 40px;
-    height: 100%;
-} */
+#header-text {
+    font-size: 32px;
+    display: inline-block;
+}
 
-ul {
-    margin: 0px;
-    align-items: center;
+ul{
+    margin: 0;
+    padding: 10px;
 }
 
 .container li{
     list-style: none;
     display: inline;
-    padding: 10px;
     text-decoration: none;
+    padding-left: 10px;
 }
 
 .container li:hover{
